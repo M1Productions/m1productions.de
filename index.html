@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M1Productions</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+        $(function() {
+           $("#includeHeader").load("header.html");
+        });
+      </script>
     <style>
     </style>
 </head>
 <body>
     <header>
         <h1>Willkommen auf meiner Webseite</h1>
-        <?php include "./header.html" ?>
-        <!--#include file="./header.html" -->
+        <div id="includeHeader"></div>
         <nav>
             <ul>
                 <li><a href="#home">Startseite</a></li>
