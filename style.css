@@ -1,0 +1,36 @@
+:root {
+  --primaryColor: #202225;
+  /*dark grey*/
+  --primaryColorLight: #54575a;
+  /*lighter dark grey*/
+  --secondaryColor: #ceccca;
+  /*light grey*/
+  --accentColor: #FFD700;
+  /*powerful yellow for highlights*/
+}
+
+html {
+  background-color: var(--primaryColorLight);
+  color: var(--secondaryColor);
+}
+
+.header {
+  background-color: var(--primaryColor);
+}
+
+.content {
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--primaryColor);
+  text-align: center;
+}
+
+.navigation {}
+
+.navLink {}
+
+.navLink:hover {
+  color: var(--accentColor);
+}
