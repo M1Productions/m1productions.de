@@ -1,7 +1,7 @@
 :root {
   --primaryColor: #202225;
   /*dark grey*/
-  --primaryColorLight: #54575a;
+  --primaryColorLight: #323334;
   /*lighter dark grey*/
   --secondaryColor: #ceccca;
   /*light grey*/
@@ -9,9 +9,15 @@
   /*powerful yellow for highlights*/
 }
 
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url(./fonts/BAHNSCHRIFT.TTF);
+}
+
 html {
   background-color: var(--primaryColorLight);
   color: var(--secondaryColor);
+  font-family: 'Bahnschrift', semi-bold;
 }
 
 body {
@@ -25,6 +31,7 @@ body {
 .header {
   background-color: var(--primaryColor);
   padding: 1vw;
+  height: 4vh;
 }
 
 .content {
@@ -38,10 +45,11 @@ body {
 }
 
 .logo{
-  display: none;
+  height: inherit;
 }
 
 .navigation {
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,10 +61,20 @@ body {
 
 .navLink {
   padding-inline: 2vw;
+  text-decoration: none;
+}
+
+.navLogo{
+  height: inherit;
+}
+
+#navigationLogo{
+  height: inherit;
 }
 
 a {
   color: var(--secondaryColor);
+  text-decoration: inherit;
 }
 a:hover {
   color: var(--accentColor);
