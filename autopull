@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#This will update the Website
+directory="."
+
+cd $directory
+git stash
+git pull
+echo "Updated Website!"
+read end
