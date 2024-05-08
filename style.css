@@ -46,6 +46,10 @@ body {
 
 .logo{
   height: inherit;
+  border-style: solid;
+  border-block: var(--secondaryColor);
+  border-width: thin;
+  padding: 1vw;
 }
 
 .navigation {
