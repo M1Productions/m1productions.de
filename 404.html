@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - M1Productions</title>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+    $(function () {
+      $("#includeHeader").load("header.html");
+      $("#includeFooter").load("footer.html");
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="includeHeader"></div>
+  <div class="content">
+    <h1 style="color: var(--accentColor);">404</h1>
+    <h1>PAGE NOT FOUND</h1><br>
+    <div style="text-decoration: underline;">
+      <a href="https://www.m1productions.de/">return to home</a>
+    </div>
+  </div>
+  <div id="includeFooter"></div>
+</body>
+
+</html>
