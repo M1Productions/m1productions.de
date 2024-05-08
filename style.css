@@ -44,7 +44,7 @@ body {
   padding: 1vw;
 }
 
-.logo{
+.logo {
   height: inherit;
   border-style: solid;
   border-color: var(--primaryColorLight);
@@ -68,11 +68,11 @@ body {
   text-decoration: none;
 }
 
-.navLogo{
+.navLogo {
   height: inherit;
 }
 
-#navigationLogo{
+#navigationLogo {
   height: inherit;
 }
 
@@ -80,6 +80,12 @@ a {
   color: var(--secondaryColor);
   text-decoration: inherit;
 }
+
 a:hover {
   color: var(--accentColor);
+}
+
+.projectPanel {
+  width: 40%;
+  height: 30%;
 }

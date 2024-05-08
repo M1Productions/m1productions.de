@@ -14,8 +14,11 @@
 	</script>
 	<script src="embedRepo/repo.js"></script>
 	<script>
-		$('content').repo({ user: 'darcyclarke', name: 'Repo.js' })
+    $(function() {
+        $('#repo1').repo({ user: 'darcyclarke', name: 'Repo.js' });
+    });
 	</script>
+
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,6 +27,7 @@
 	<div class="content">
 		<i style="color: var(--accentColor);">main landing page</i> to inform about us and list different short forms of
 		the other pages
+		<div id="repo1"></div>
 	</div>
 	<div id="includeFooter"></div>
 </body>

@@ -12,6 +12,11 @@
 			$("#includeFooter").load("footer.html");
 		});
 	</script>
+	<script src="embedRepo/repo.js"></script>
+	<script>
+		$(function () { $('#spacerexProject').repo({ user: 'kadsendino', name: 'spacerex', branch: 'main' }); });
+		$(function () { $('#m1productionsProject').repo({ user: 'M1Productions', name: 'm1productions.de', branch: 'main' }); });
+	</script>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,6 +24,12 @@
 	<div id="includeHeader"></div>
 	<div class="content">
 		this is where our past and ongoing projects are displayed
+		<div class="projectPanel">
+			<div id="spacerexProject"></div>
+		</div>
+		<div class="projectPanel">
+			<div id="m1productionsProject"></div>
+		</div>
 	</div>
 	<div id="includeFooter"></div>
 </body>
